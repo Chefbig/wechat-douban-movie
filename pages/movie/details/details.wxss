@@ -1,0 +1,90 @@
+/* pages/movie/details/details.wxss */
+.movie-details-header {
+  height: 370rpx;
+  background: #616161;
+}
+
+.movie-details-header-img {
+  position: absolute;
+  top: 120rpx;
+  left: 60rpx;
+  width: 170rpx;
+  height: 270rpx;
+}
+
+.movie-details-header-title {
+  position: absolute;
+  top: 150rpx;
+  left: 250rpx;
+  width: 430rpx;
+  font-size: 1.1rem;
+  font-family: 黑体;
+  text-overflow: ellipsis;
+  overflow: hidden;
+	white-space: nowrap;
+  color: #fff;
+}
+
+.movie-details-header-rating {
+  position: absolute;
+  top: 210rpx;
+  left: 250rpx;
+  font-size: 1.9rem;
+  font-family: 黑体;
+  color: #fff;
+}
+
+.movie-details-container {
+  margin: 60rpx;
+  font-size: 0.7rem;
+}
+
+.movie-details-container-intro {
+  margin-bottom: 40rpx;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.movie-details-container-intro-item {
+  line-height: 0.55rem;
+}
+
+.movie-details-container-intro-item text {
+  float: left;
+  margin-right: 6rpx;
+}
+
+.movie-details-container-intro-year {
+  margin-top: 20rpx;
+}
+
+.movie-details-container-link {
+  margin-bottom: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-details-container-link-btn {
+  width: 40%;
+  padding:6rpx 0;
+  text-align:center;
+  color:#ffb74d;
+  border:1px solid #ffb74d;
+}
+
+.movie-details-container-summary-title {
+  display: block;
+  margin-bottom: 23rpx;
+  font-family: 微软雅黑;
+  color: #9e9e9e;
+}
+
+.movie-details-container-summary-text {
+  line-height: 0.8rem;
+}

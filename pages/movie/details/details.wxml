@@ -1,0 +1,48 @@
+<!--pages/movie/details/details.wxml-->
+<view class="movie-details">
+  <view class="movie-details-header">
+    <image
+      src="{{details.image}}"
+      class="movie-details-header-img"
+    />
+    <text class="movie-details-header-title">{{details.title}}</text>
+    <text class="movie-details-header-rating">{{details.rating}}</text>
+  </view>
+  <view class="movie-details-container">
+    <view class="movie-details-container-intro">
+      <view class="movie-details-container-intro-item clearfix">
+        <text
+          wx:for="{{details.genres}}"
+          wx:for-item="genres"
+        >
+          {{genres}}
+        </text>
+      </view>
+      <view class="movie-details-container-intro-item clearfix">
+        <text class="movie-details-container-intro-year">{{details.year}}</text>
+        <text
+          wx:for="{{details.countries}}"
+          wx:for-item="countries"
+        >
+          {{countries}}
+        </text>
+      </view>
+      <view class="movie-details-container-intro-item clearfix">
+        <text
+          wx:for="{{details.casts}}"
+          wx:for-item="casts"
+        >
+          {{casts.name}}
+        </text>
+      </view>
+    </view>
+    <view class="movie-details-container-link">
+      <view class="movie-details-container-link-btn">想看</view>
+      <view class="movie-details-container-link-btn">看过</view>
+    </view>
+    <view class="movie-details-container-summary">
+      <text class="movie-details-container-summary-title">剧情简介</text>
+      <text class="movie-details-container-summary-text">{{details.summary}}</text>
+    </view>
+  </view>
+</view>

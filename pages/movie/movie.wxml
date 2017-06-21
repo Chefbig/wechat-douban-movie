@@ -1,0 +1,30 @@
+<!--pages/movie/movie.wxml-->
+<view class="movie">
+  <view
+    class="movie-item"
+    wx:for="{{subjects}}"
+    wx:for-item="subject"
+  >
+    <view>
+      <text class="movie-item-title">{{subject.name}}</text>
+    </view>
+    <view
+      class="movie-item-scroll-x"
+    >
+      <view
+        class="movie-item-block"
+        wx:for="{{subject.value}}"
+        wx:for-item="item"
+        bindtap="toDetails"
+        data-id="{{item.id}}"
+      >
+        <image
+          src="{{item.image}}"
+          class="movie-item-block-img"
+        />
+        <text class="movie-item-block-title">{{item.title}}</text>
+        <text class="movie-item-block-rating">{{item.rating}}</text>
+      </view>
+    </view>
+  </view>
+</view>
